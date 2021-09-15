@@ -1,0 +1,95 @@
+<html lang="EN">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <style>
+        .sql {
+            width: 300px;
+            height: 30px;
+            text-align: center;
+        }
+        .my-container {
+            width: 080%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        textarea {
+            font-size: 1em;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            width: 80%;
+            height: 200px;
+        }
+        input[type=number] {
+            width: 100px;
+        }
+        .left {
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+        .container {
+            width: 80% !important;
+        }
+        div>.row {
+            border-bottom: 1px solid grey;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .example {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50% !important;
+            background-color: #efdfc2;
+            border-color: #f5d192;
+            border-radius: 10px;
+            border-width: 1px;
+            border-style: solid;
+        }
+        pre {
+            display: inline;
+        }
+    </style>
+    <title>MySQL CREATE Generator</title>
+</head>
+<body>
+
+<div class="my-container">
+    <h1>MySQL CREATE generator for CSV</h1>
+    <div class="data-types">
+        Data Types:
+        <table>
+            <tr><td><strong>I</strong></td><td>INT</td></tr>
+            <tr><td><strong>S</strong></td><td>VARCHAR</td></tr>
+            <tr><td><strong>B</strong></td><td>BOOLEAN/TINYINT</td></tr>
+            <tr><td><strong>D</strong></td><td>DATETIME</td></tr>
+            <tr><td><strong>T</strong></td><td>TIMESTAMP</td></tr>
+        </table>
+    </div>
+    <div class="example">
+        <strong>Example</strong><br/>
+        <strong>Name:</strong> Table name<br/>
+        <strong>SQL CSV:</strong> <pre>field1, field2, field3</pre><br/>
+        <strong>Data Type:</strong> <pre>sii</pre><br/>
+    </div><br/><br/>
+    TABLE NAME<br/>
+    <input type="text" class="sql" id="table-name"><br/><br/>
+    SQL CSV<br/>
+    <input type="text" class="sql" id="sql-in"><br/><br/>
+    Data Type <br/>
+    <input type="text" class="sql" id="sql-type"><br/><br/>
+    <div id="sql-out" class="container">
+
+    </div>
+    <div id="final-out">
+
+    </div>
+</div>
+</body>
+</html>
